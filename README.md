@@ -27,8 +27,3 @@
 <a href="https://www.twitch.tv/arthurbryt_oficial" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/arthur-batista-oliveira-bb8018358/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
 </div>
-
-
-<div class="stat">
-    <span class="stat-count">0</span>  <p class="stat-detail">Visitantes</p>
-</div>
