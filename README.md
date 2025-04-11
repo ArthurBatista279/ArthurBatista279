@@ -18,10 +18,10 @@
 
  ![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
 
-   <div align="center">
+ <div align="center">
         <img alt="Visitor Stats" 
             src="https://widgetbite.com/stats/<github-ArthurBatista279>"/>  
-    </div>
+</div>
 
 ## 📫 Conecte-se comigo:
  
