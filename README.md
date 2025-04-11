@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-![Arthur's GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=shadow_red_icons=true)
+![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=![shadow_red]_icons=true)
 
 🎮 Apaixonado por jogos 
 
