@@ -3,7 +3,7 @@
     <span class="typed">Arthur, desenvolvedor indie de jogos</span>
   </a>
 </h1>
-<img src="https://widgetbite.com/banner?title=Arthur%20Batista%20Oliveira&subtitle=Desenvolvedor%20INDIE&backgroundpalette=twilight&fontpalette=water&titletransform=rotate&subtitletransform=rotate" width=100% height=100%/>
+
 
 🎮 Apaixonado por jogos 
 
