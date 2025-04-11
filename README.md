@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279)](https://github.com/ArthurBatista279/github-readme-stats)
+![Arthur's GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=shadow_red_icons=true)
 
 🎮 Apaixonado por jogos 
 
