@@ -7,7 +7,7 @@
 🚀 Em constante evolução: aprendendo, criando e compartilhando
 
  💡 Atualmente:
-- Criando meu primeiro projeto no Roblox Studio ⚓
+- Criando meu primeiro projeto no Roblox Studio 
 - Aprendendo mais sobre modelagem 3D no Blender e integração com Roblox
 - Trabalhando em projetos de casa inteligente como parte de estudos e prática
 
