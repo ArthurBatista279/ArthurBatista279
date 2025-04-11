@@ -15,8 +15,6 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ArthurBatista279&layout=compact)](https://github.com/ArthurBatista279/github-readme-stats)
 
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?ArthurBatista279=ffflabs)](https://github.com/ArthurBatista279/github-readme-stats)
-
  💡 Atualmente:
 - Criando meu primeiro projeto no Roblox Studio 
 - Aprendendo mais sobre modelagem 3D no Blender e integração com Roblox
