@@ -11,7 +11,7 @@
 
 🚀 Em constante evolução: aprendendo, criando e compartilhando
 
-![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=![shadow_red]_icons=true)
+![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
 
  💡 Atualmente:
 - Criando meu primeiro projeto no Roblox Studio 
