@@ -13,6 +13,8 @@
 
 ![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ArthurBatista279&layout=compact)](https://github.com/ArthurBatista279/github-readme-stats)
+
  💡 Atualmente:
 - Criando meu primeiro projeto no Roblox Studio 
 - Aprendendo mais sobre modelagem 3D no Blender e integração com Roblox
