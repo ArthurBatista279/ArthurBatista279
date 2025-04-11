@@ -4,13 +4,14 @@
   </a>
 </h1>
 
-![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=![shadow_red]_icons=true)
 
 🎮 Apaixonado por jogos 
 
 🛠️ Explorando o mundo da programação, Roblox Studio e desenvolvimento de jogos  
 
 🚀 Em constante evolução: aprendendo, criando e compartilhando
+
+![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=![shadow_red]_icons=true)
 
  💡 Atualmente:
 - Criando meu primeiro projeto no Roblox Studio 
