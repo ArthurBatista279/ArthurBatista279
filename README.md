@@ -26,3 +26,8 @@
 <a href="https://www.twitch.tv/arthurbryt_oficial" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/arthur-batista-oliveira-bb8018358/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
 </div>
+
+   <div align="center">
+        <img alt="Visitor Stats" 
+            src="https://widgetbite.com/stats/<github-ArthurBatista279>"/>  
+    </div>
