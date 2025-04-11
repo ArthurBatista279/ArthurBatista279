@@ -15,11 +15,11 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ArthurBatista279&layout=compact)](https://github.com/ArthurBatista279/github-readme-stats)
 
- 💡 Atualmente:
+## 💡 Atualmente:
 - Criando meu primeiro projeto no Roblox Studio 
 - Aprendendo mais sobre modelagem 3D no Blender e integração com Roblox
 
- 📫 Conecte-se comigo:
+## 📫 Conecte-se comigo:
  
 <div>
 <a href = "mailto:contato@barthur.oliveira07@gmail.com"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
