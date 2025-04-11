@@ -4,8 +4,7 @@
   </a>
 </h1>
 
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&theme=dark&show_icons=true)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279)](https://github.com/ArthurBatista279/github-readme-stats)
 
 🎮 Apaixonado por jogos 
 
