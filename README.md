@@ -9,7 +9,6 @@
  💡 Atualmente:
 - Criando meu primeiro projeto no Roblox Studio 
 - Aprendendo mais sobre modelagem 3D no Blender e integração com Roblox
-- Trabalhando em projetos de casa inteligente como parte de estudos e prática
 
  📫 Conecte-se comigo:
 - Email: barthur.oliveira07@gmail
