@@ -29,22 +29,6 @@
 </div>
 
 
-jQuery ( documento ) . pronto ( função ( )  {
-	função  count ( $this ) {
-		var  atual  =  parseInt ( $ this.html ( ) , 10 ) ;​ 
-		atual  =  atual  +  1 ;  /* Onde 1 é incremento */
-
-		$this . html ( ++ atual ) ;
-		se ( atual  >  $this . data ( 'contagem' ) ) {
-			$this .html ( $this .data ( ' contagem ' ) ) ;
-		}  outro  {
-			setTimeout ( função ( ) { contagem ( $this ) } ,  50 ) ;
-		}
-	}
-
-	jQuery ( ".stat-count " ) .cada ( função ( ) { 
-	  jQuery ( isto ) . dados ( 'contagem ' ,  parseInt ( jQuery ( isto ) .html ( ) , 10 ) ) ; 
-	  jQuery ( isto ) . html ( '0' ) ;
-	  contagem ( jQuery ( isto ) ) ;
-	} ) ;
-} ) ;
+<div class="stat">
+    <span class="stat-count">0</span>  <p class="stat-detail">Visitantes</p>
+</div>
