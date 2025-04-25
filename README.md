@@ -19,7 +19,7 @@
  ![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
 
  <div><br>
-    <a href="https://github.com/alexiamelhado18">
+    <a href="https://github.com/ArthurBatista279">
         <img height="180em"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArthurBatista279&layout=compact&langs_count=16&theme=blueberry"
              />
