@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-<p align="center"><strong>"E a frase mais: quero esse ponto."</strong></p>
+
 
 Sou Arthur, um entusiasta de tecnologia de São Paulo com foco em **desenvolvimento de jogos, automação com Arduino, design 3D e simulações**. Tenho experiência prática com **Roblox Studio (nível básico a intermediário)**, atuando em projetos de modelagem, construção de ambientes e mecânicas interativas.
 
