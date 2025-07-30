@@ -14,6 +14,8 @@ Além disso, sou gamer ativo e criador de conteúdo de MLBB(Mobile Legends: Bang
 
 ## 💡 Atualmente:
 -Cursando Desenvolvimento De Sistemas no SENAI
+
+
 -Buscando TIMES profissionais no MLBB, futuramente na ativa novamente no competitivo
 
  ![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
