@@ -1,20 +1,20 @@
  <h1 align="center">
   <a href="#">
-    <span class="typed">Arthur, desenvolvedor indie de jogos</span>
+    <span class="typed">Olá me chamo Arthur!</span>
   </a>
 </h1>
 
 
-🎮 Apaixonado por jogos 
+Sou Arthur, um entusiasta de tecnologia de São Paulo, com forte interesse em desenvolvimento de jogos, automação com Arduino, design 3D e simulações. Tenho experiência prática em Roblox Studio(Leve), onde trabalho com modelagem, construção de ambientes e mecânicas interativas. Também exploro projetos com Arduino focados em sensores, relés, segurança e controle físico de sistemas.
 
-🛠️ Explorando o mundo da programação, Roblox Studio e desenvolvimento de jogos  
+Além disso, sou gamer ativo e criador de conteúdo de MLBB(Mobile Legends: Bang Bang), com visão crítica e técnica sobre jogos, estou quase sempre jogando alguma coisa, não importa qual seja, estarei jogando.
 
-🚀 Em constante evolução: aprendendo, criando e compartilhando
+
 
 
 ## 💡 Atualmente:
-- Criando meu primeiro projeto no Roblox Studio 
-- Aprendendo mais sobre modelagem 3D no Blender e integração com Roblox
+-Cursando Desenvolvimento De Sistemas no SENAI
+-Buscando TIMES profissionais no MLBB, futuramente na ativa novamente no competitivo
 
  ![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
 
