@@ -36,11 +36,6 @@
 
 </div>
  
-<div align="center"><br>
-  <h2>Contador de visitas</h2> 
-  
-  ![Visitor Count](https://profile-counter.glitch.me/Arthurbatista279/count.svg)
- </div>
 
 <div align="center"><br>
  
