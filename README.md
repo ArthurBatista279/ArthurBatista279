@@ -1,44 +1,55 @@
- <h1 align="center">
+<h1 align="center">
   <a href="#">
-    <span class="typed">Olá me chamo Arthur!</span>
+    <span>Olá, me chamo Arthur!</span>
   </a>
 </h1>
 
+<p align="center"><strong>"E a frase mais: quero esse ponto."</strong></p>
 
-Sou Arthur, um entusiasta de tecnologia de São Paulo, com forte interesse em desenvolvimento de jogos, automação com Arduino, design 3D e simulações. Tenho experiência prática em Roblox Studio(Leve), onde trabalho com modelagem, construção de ambientes e mecânicas interativas. Também exploro projetos com Arduino focados em sensores, relés, segurança e controle físico de sistemas.
+Sou Arthur, um entusiasta de tecnologia de São Paulo com foco em **desenvolvimento de jogos, automação com Arduino, design 3D e simulações**. Tenho experiência prática com **Roblox Studio (nível básico a intermediário)**, atuando em projetos de modelagem, construção de ambientes e mecânicas interativas.
 
-Além disso, sou gamer ativo e criador de conteúdo de MLBB(Mobile Legends: Bang Bang), com visão crítica e técnica sobre jogos, estou quase sempre jogando alguma coisa, não importa qual seja, estarei jogando.
+Também exploro sistemas físicos com **Arduino**, utilizando sensores, relés, buzzer, MQ135 e outros componentes, sempre buscando segurança, eficiência e controle nos meus projetos.
 
+Além disso, sou **criador de conteúdo e jogador ativo de Mobile Legends: Bang Bang (MLBB)**, com uma visão crítica sobre jogabilidade, balanceamento e competitivo. Estou quase sempre jogando — seja qual for o jogo, estarei nele aprendendo e evoluindo.
 
+---
 
+## 💡 Atualmente
 
-## 💡 Atualmente:
--Cursando Desenvolvimento De Sistemas no SENAI
-
-
--Buscando TIMES profissionais no MLBB, futuramente na ativa novamente no competitivo
-
- ![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
-
- <div><br>
-    <a href="https://github.com/ArthurBatista279">
-        <img height="180em"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArthurBatista279&layout=compact&langs_count=16&theme=blueberry"
-             />
-     </a>
+- 📚 **Cursando Desenvolvimento de Sistemas - SENAI**
+- 🔍 **Buscando oportunidades em times profissionais de MLBB**
+- 🎮 Em fase de retomada no **competitivo**
 
 
-## 📫 Conecte-se comigo:
- 
+---
+
+## 📈 Estatísticas GitHub
+
+![Arthur GitHub stats](https://github-readme-stats.vercel.app/api?username=ArthurBatista279&theme=dark&show_icons=true)
+
+<a href="https://github.com/ArthurBatista279">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArthurBatista279&layout=compact&langs_count=16&theme=blueberry"/>
+</a>
+
+---
+
+## 📫 Conecte-se comigo
+
 <div>
-<a href = "mailto:contato@barthur.oliveira07@gmail.com"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-<a href="https://www.twitch.tv/arthurbryt_oficial" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a>
-<a href="https://www.linkedin.com/in/arthur-batista-oliveira-bb8018358/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+<a href="mailto:barthur.oliveira07@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+<a href="https://www.twitch.tv/arthurbryt_oficial" target="_blank">
+  <img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"/>
+</a>
+<a href="https://www.linkedin.com/in/arthur-batista-oliveira-bb8018358/" target="_blank">
+  <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>   
 </div>
 
-</div>
- 
+---
 
-<div align="center"><br>
- 
-<br></div>
+<div align="center">
+  <sub>Feito com dedicação e propósito. Em constante evolução.</sub>
+</div>
+
