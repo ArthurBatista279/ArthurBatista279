@@ -10,7 +10,7 @@ Sou Arthur, um entusiasta de tecnologia de São Paulo com foco em **desenvolvime
 
 Também exploro sistemas físicos com **Arduino**, utilizando sensores, relés, buzzer, MQ135 e outros componentes, sempre buscando segurança, eficiência e controle nos meus projetos.
 
-Além disso, sou **criador de conteúdo e jogador ativo de Mobile Legends: Bang Bang (MLBB)**, com uma visão crítica sobre jogabilidade, balanceamento e competitivo. Estou quase sempre jogando — seja qual for o jogo, estarei nele aprendendo e evoluindo.
+Além disso, sou **criador de conteúdo e jogador ativo de Mobile Legends: Bang Bang (MLBB)**, com uma visão crítica sobre jogabilidade, balanceamento e competitivo. 
 
 ---
 
