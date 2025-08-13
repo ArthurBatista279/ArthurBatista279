@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="#">
-    <span>Olá, me chamo Arthur!</span>
+    <span>Olá, sejam bem-vindo(a)</span>
   </a>
 </h1>
 
