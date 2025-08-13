@@ -53,3 +53,8 @@ Além disso, sou **criador de conteúdo e jogador ativo de Mobile Legends: Bang 
   <sub>Feito com dedicação e propósito. Em constante evolução.</sub>
 </div>
 
+
+
+<div align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=ArthurBatista279.ArthurBatista279&"  />
+</div>
