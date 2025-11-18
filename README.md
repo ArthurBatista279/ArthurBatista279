@@ -15,9 +15,6 @@ Também exploro sistemas físicos com **Arduino**, utilizando sensores, relés, 
 ## 💡 Atualmente
 
 - 📚 **Cursando Desenvolvimento de Sistemas - SENAI**
-- 🔍 **Buscando oportunidades em times profissionais de MLBB**
-- 🎮 Em fase de retomada no **competitivo**
-
 
 ---
 
