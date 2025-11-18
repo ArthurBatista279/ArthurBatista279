@@ -8,9 +8,7 @@
 
 Sou Arthur, um entusiasta de tecnologia de São Paulo com foco em **desenvolvimento de jogos, automação com Arduino, design 3D e simulações**. Tenho experiência prática com **Roblox Studio (nível básico a intermediário)**, atuando em projetos de modelagem, construção de ambientes e mecânicas interativas.
 
-Também exploro sistemas físicos com **Arduino**, utilizando sensores, relés, buzzer, MQ135 e outros componentes, sempre buscando segurança, eficiência e controle nos meus projetos.
-
-Além disso, sou **criador de conteúdo e jogador ativo de Mobile Legends: Bang Bang (MLBB)**, com uma visão crítica sobre jogabilidade, balanceamento e competitivo. 
+Também exploro sistemas físicos com **Arduino**, utilizando sensores, relés, buzzer, MQ135 e outros componentes, sempre buscando segurança, eficiência e controle nos meus projetos. 
 
 ---
 
