@@ -9,27 +9,27 @@ No dia a dia, estudo e aplico conceitos de desenvolvimento web, lógica, automa�
 
 Atualmente estou me dedicando a aprender e aprimorar:
 
-HTML e CSS, criando interfaces limpas e responsivas;
+-- HTML e CSS, criando interfaces limpas e responsivas;
 
-C#, com foco em lógica, POO e mini sistemas;
+-- C#, com foco em lógica, POO e mini sistemas;
 
-Arduino, integrando sensores, relés e dispositivos para automação;
+-- Arduino, integrando sensores, relés e dispositivos para automação;
 
-Segurança da informação e criptografia, entendendo conceitos essenciais;
+-- Segurança da informação e criptografia, entendendo conceitos essenciais;
 
-Hardware e manutenção de computadores, desde montagem, upgrades, análise de desempenho e solução de problemas;
+-- Hardware e manutenção de computadores, desde montagem, upgrades, análise de desempenho e solução de problemas;
 
-Organização e documentação de projetos usando Git e GitHub.
+-- Organização e documentação de projetos usando Git e GitHub.
 
-Alguns projetos que refletem meu aprendizado:
+-- Alguns projetos que refletem meu aprendizado:
 
-Sistema de automação com Arduino usando sensores e alertas;
+-- Sistema de automação com Arduino usando sensores e alertas;
 
-Site pessoal com meus links e conteúdos;
+-- Site pessoal com meus links e conteúdos;
 
-Exercícios e pequenos sistemas em C#;
+-- Exercícios e pequenos sistemas em C#;
 
-Testes e otimizações em PCs e notebooks para entender performance real.
+-- Testes e otimizações em PCs e notebooks para entender performance real.
 
 Meu objetivo é evoluir como desenvolvedor e também como técnico, unindo software e hardware para criar soluções completas. Busco melhorar minha comunicação técnica e transformar ideias em projetos funcionais — seja em código, máquinas físicas ou experiências criativas.
 
@@ -37,17 +37,17 @@ Meu objetivo é evoluir como desenvolvedor e também como técnico, unindo softw
 
 ## 💡 Atualmente
 
- Cursando Desenvolvimento de Sistemas – SENAI
+-- Cursando Desenvolvimento de Sistemas – SENAI
 
- Estudando HTML e CSS para criar sites simples e organizados
+-- Estudando HTML e CSS para criar sites simples e organizados
 
- Praticando lógica de programação e C#
+-- Praticando lógica de programação e C#
 
- Aprendendo o básico de hardware, montagem e manutenção de computadores
+-- Aprendendo o básico de hardware, montagem e manutenção de computadores
 
- Iniciando projetos com Arduino e sensores
+-- Iniciando projetos com Arduino e sensores
 
- Começando a aprender noções básicas de segurança de redes, entendendo conceitos iniciais de privacidade online e como se proteger em navegações mais arriscadas
+-- Começando a aprender noções básicas de segurança de redes, entendendo conceitos iniciais de privacidade online e como se proteger em navegações mais arriscadas
 
 ---
 
