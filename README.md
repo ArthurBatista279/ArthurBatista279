@@ -35,9 +35,6 @@ Meu objetivo é evoluir como desenvolvedor e também como técnico, unindo softw
 <a href="mailto:barthur.oliveira07@gmail.com" target="_blank">
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
-<a href="https://www.tiktok.com/@arthurbrytoficial?is_from_webapp=1&sender_device=pc" target="_blank">
-  <img src="https://img.shields.io/badge/TikTok-9146FF?style=for-the-badge&logo=tiktok&logoColor=white"/>
-</a>
 <a href="https://www.linkedin.com/in/arthur-batista-oliveira-bb8018358/" target="_blank">
   <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>   
