@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05080d" />
+      <stop offset="50%" stop-color="#0a111d" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb800" />
+      <stop offset="100%" stop-color="#ff6b00" />
+    </linearGradient>
+
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb800" stop-opacity="0.45" />
+      <stop offset="45%" stop-color="#00e5ff" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#070a0f" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00e5ff" stroke-width="0.6" stroke-opacity="0.07" />
+    </pattern>
+
+    <style>
+      .title { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif; font-weight: 800; font-size: 42px; fill: #eef4fa; letter-spacing: 1.5px; }
+      .subtitle { font-family: 'Consolas', 'Courier New', monospace; font-weight: 700; font-size: 16px; fill: #00e5ff; letter-spacing: 2px; }
+      .desc { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 16px; fill: #9fb0c7; }
+      .badge-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; font-weight: 700; letter-spacing: 1px; }
+      .spin-cw { transform-origin: 960px 170px; animation: rotCW 18s linear infinite; }
+      .spin-ccw { transform-origin: 960px 170px; animation: rotCCW 12s linear infinite; }
+      .spin-slow { transform-origin: 960px 170px; animation: rotCW 28s linear infinite; }
+      .pulse-core { transform-origin: 960px 170px; animation: pulse 3.2s ease-in-out infinite; }
+      .blink { animation: blinker 2s ease-in-out infinite; }
+      @keyframes rotCW { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes rotCCW { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+      @keyframes pulse { 0%, 100% { transform: scale(0.94); opacity: 0.85; } 50% { transform: scale(1.08); opacity: 1; } }
+      @keyframes blinker { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    </style>
+  </defs>
+
+  <!-- Background & Tactical Grid -->
+  <rect width="1200" height="340" rx="18" fill="url(#bgGrad)" stroke="#1e2d42" stroke-width="2" />
+  <rect width="1200" height="340" rx="18" fill="url(#grid)" />
+
+  <!-- Top & Bottom Accent Bars -->
+  <rect x="40" y="0" width="220" height="3" fill="url(#cyanGrad)" />
+  <rect x="270" y="0" width="80" height="3" fill="url(#goldGrad)" />
+  <rect x="850" y="337" width="280" height="3" fill="url(#goldGrad)" />
+
+  <!-- HUD Corner Brackets -->
+  <path d="M 24 44 L 24 24 L 44 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-opacity="0.7" />
+  <path d="M 1176 44 L 1176 24 L 1156 24" fill="none" stroke="#ffb800" stroke-width="2" stroke-opacity="0.7" />
+  <path d="M 24 296 L 24 316 L 44 316" fill="none" stroke="#00e5ff" stroke-width="2" stroke-opacity="0.7" />
+  <path d="M 1176 296 L 1176 316 L 1156 316" fill="none" stroke="#ffb800" stroke-width="2" stroke-opacity="0.7" />
+
+  <!-- Status Pill -->
+  <rect x="56" y="42" width="430" height="28" rx="6" fill="#0d1829" stroke="#00e5ff" stroke-width="1" stroke-opacity="0.4" />
+  <circle cx="74" cy="56" r="5" fill="#10b981" class="blink" />
+  <text x="90" y="60" class="badge-text" fill="#eef4fa">SYS.ONLINE // BACKEND .NET &amp; AI SYSTEMS ENGINEER</text>
+
+  <!-- Main Heading -->
+  <text x="56" y="122" class="title">ARTHUR BATISTA OLIVEIRA</text>
+  <text x="56" y="154" class="subtitle">&gt;_ C# / .NET 10 · PYTHON · AI RUNTIMES · SQL SERVER</text>
+
+  <!-- Bio Lines -->
+  <text x="56" y="196" class="desc">Desenvolvedor de Sistemas (SENAI) focado em Engenharia de Software, Arquitetura Back-End</text>
+  <text x="56" y="220" class="desc">em Camadas e Runtimes Determinísticos de Inteligência Artificial.</text>
+
+  <!-- Project Highlight Pills -->
+  <!-- Pill 1: JarvisIA -->
+  <rect x="56" y="252" width="236" height="46" rx="8" fill="#141923" stroke="#ffb800" stroke-width="1.5" />
+  <text x="72" y="271" class="badge-text" fill="#ffb800">★ JARVIS_IA [GÊNESE]</text>
+  <text x="72" y="288" class="badge-text" fill="#9fb0c7" style="font-size:10.5px;">Autoral · 4 Camadas C# / SQLite</text>
+
+  <!-- Pill 2: R.I.P.E.R. -->
+  <rect x="304" y="252" width="246" height="46" rx="8" fill="#0d1826" stroke="#00e5ff" stroke-width="1.5" />
+  <text x="320" y="271" class="badge-text" fill="#00e5ff">◆ R.I.P.E.R. [.NET 10]</text>
+  <text x="320" y="288" class="badge-text" fill="#9fb0c7" style="font-size:10.5px;">Autoral · 110 PASS · Preflight IA</text>
+
+  <!-- Pill 3: Mark_LV -->
+  <rect x="562" y="252" width="248" height="46" rx="8" fill="#121824" stroke="#10b981" stroke-width="1.2" />
+  <text x="578" y="271" class="badge-text" fill="#10b981">◈ MARK_LV [OPEN SOURCE MOD]</text>
+  <text x="578" y="288" class="badge-text" fill="#9fb0c7" style="font-size:10.5px;">Custom UI · Voz/Texto &amp; Orbe</text>
+
+  <!-- ================= ANIMATED JARVIS GENESIS ORB (RIGHT SIDE) ================= -->
+  <circle cx="960" cy="170" r="155" fill="url(#orbGlow)" />
+
+  <!-- Outer Gimbal Ring (Slow CW) -->
+  <g class="spin-slow">
+    <circle cx="960" cy="170" r="126" fill="none" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="18 8 4 8" />
+    <circle cx="960" cy="44" r="4" fill="#00e5ff" />
+    <circle cx="960" cy="296" r="4" fill="#00e5ff" />
+    <circle cx="834" cy="170" r="4" fill="#ffb800" />
+    <circle cx="1086" cy="170" r="4" fill="#ffb800" />
+  </g>
+
+  <!-- Middle Reactor Ring (CCW) -->
+  <g class="spin-ccw">
+    <circle cx="960" cy="170" r="98" fill="none" stroke="#ffb800" stroke-width="2.5" stroke-opacity="0.75" stroke-dasharray="32 14" />
+    <circle cx="960" cy="170" r="86" fill="none" stroke="#00e5ff" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="6 10" />
+  </g>
+
+  <!-- Inner Geodesic Polygon & Arc Segments (CW) -->
+  <g class="spin-cw">
+    <polygon points="960,98 1022,134 1022,206 960,242 898,206 898,134" fill="none" stroke="#00e5ff" stroke-width="1.6" stroke-opacity="0.7" />
+    <polygon points="960,112 1010,199 910,199" fill="none" stroke="#ffb800" stroke-width="1.3" stroke-opacity="0.65" />
+    <polygon points="960,228 1010,141 910,141" fill="none" stroke="#ffb800" stroke-width="1.3" stroke-opacity="0.65" />
+  </g>
+
+  <!-- Pulsing Genesis Core -->
+  <g class="pulse-core">
+    <circle cx="960" cy="170" r="36" fill="url(#goldGrad)" opacity="0.92" />
+    <circle cx="960" cy="170" r="22" fill="#fff3b0" opacity="0.85" />
+    <circle cx="960" cy="170" r="46" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.5" stroke-dasharray="4 6" />
+  </g>
+
+  <!-- Orb HUD Telemetry Labels -->
+  <text x="895" y="324" class="badge-text" fill="#ffb800" style="font-size:10px;">ORBE // JARVIS GENESIS CORE</text>
+</svg>
