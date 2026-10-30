@@ -20,10 +20,10 @@
       <img src="https://img.shields.io/github/stars/ArthurBatista279?label=STARS&color=00e5ff&logo=github&style=for-the-badge" alt="Stars" />
     </a>
     <a href="https://www.linkedin.com/in/arthur-batista-oliveira-bb8018358/">
-      <img src="https://img.shields.io/badge/LINKEDIN-ARTHUR_BATISTA-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="./assets/badge-01.svg" alt="LinkedIn" />
     </a>
     <a href="mailto:barthur.oliveira07@gmail.com">
-      <img src="https://img.shields.io/badge/GMAIL-CONTATO-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+      <img src="./assets/badge-02.svg" alt="Email" />
     </a>
   </p>
 
@@ -61,9 +61,9 @@ No **Sector Quarantine**, desenvolvo os sistemas do jogo e faço a modelagem de 
       <tr>
         <td align="left">
           <p>
-            <img src="https://img.shields.io/badge/STATUS-EM_DESENVOLVIMENTO-f59e0b?style=for-the-badge" alt="Status" />
-            <img src="https://img.shields.io/badge/GENERO-RTS_T%C3%81TICO_DE_SOBREVIV%C3%8ANCIA-00e5ff?style=for-the-badge" alt="Gênero" />
-            <img src="https://img.shields.io/badge/PLATAFORMA-ROBLOX-10b981?style=for-the-badge&logo=roblox&logoColor=white" alt="Roblox" />
+            <img src="./assets/badge-03.svg" alt="Status" />
+            <img src="./assets/badge-04.svg" alt="Gênero" />
+            <img src="./assets/badge-05.svg" alt="Roblox" />
           </p>
           <p>
             Jogo de estratégia em tempo real em que o jogador comanda a <strong>FCDC (Frente de Contenção e Defesa Civil)</strong> durante um surto zumbi em uma cidade em quarentena.
@@ -108,7 +108,7 @@ No **Sector Quarantine**, desenvolvo os sistemas do jogo e faço a modelagem de 
 
   <!-- HISTÓRICO DE ATIVIDADE -->
   <a href="https://github.com/ArthurBatista279">
-    <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=ArthurBatista279&bg_color=05070a&color=f59e0b&line=ff7700&point=00e5ff&area=true&area_color=f59e0b&hide_border=true&radius=12&custom_title=Registro+de+Atividade+%26+Commits+(ArthurBatista279)" alt="Activity Graph" />
+    Ver histórico de contribuições no GitHub
   </a>
 
 </div>
@@ -119,22 +119,22 @@ No **Sector Quarantine**, desenvolvo os sistemas do jogo e faço a modelagem de 
 
 <div align="center">
 
-  ### Jogos e modelagem 3D
+  <h3>Jogos e modelagem 3D</h3>
   <p>
-    <img src="https://img.shields.io/badge/Roblox_Studio-00A2FF?style=for-the-badge&logo=roblox&logoColor=white" alt="Roblox Studio" />
-    <img src="https://img.shields.io/badge/Luau-000080?style=for-the-badge&logo=lua&logoColor=white" alt="Luau" />
-    <img src="https://img.shields.io/badge/Blender_3D-E87D0D?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" />
-    <img src="https://img.shields.io/badge/Hard--Surface_3D-222?style=for-the-badge&logo=autodesk&logoColor=white" alt="Hard-Surface" />
-    <img src="https://img.shields.io/badge/Game_Design_%26_RTS-111?style=for-the-badge" alt="Game Design" />
+    <img src="./assets/badge-06.svg" alt="Roblox Studio" />
+    <img src="./assets/badge-07.svg" alt="Luau" />
+    <img src="./assets/badge-08.svg" alt="Blender" />
+    <img src="./assets/badge-09.svg" alt="Hard-Surface" />
+    <img src="./assets/badge-10.svg" alt="Game Design" />
   </p>
 
-  ### Programação
+  <h3>Programação</h3>
   <p>
-    <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white" alt="C#" />
-    <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-    <img src="https://img.shields.io/badge/Bancos_de_Dados-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="Databases" />
-    <img src="https://img.shields.io/badge/Git_%26_GitHub-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+    <img src="./assets/badge-11.svg" alt="C#" />
+    <img src="./assets/badge-12.svg" alt=".NET" />
+    <img src="./assets/badge-13.svg" alt="Python" />
+    <img src="./assets/badge-14.svg" alt="Databases" />
+    <img src="./assets/badge-15.svg" alt="Git" />
   </p>
 
 </div>
@@ -147,13 +147,13 @@ No **Sector Quarantine**, desenvolvo os sistemas do jogo e faço a modelagem de 
   <p>Para falar sobre projetos ou oportunidades, entre em contato pelo LinkedIn ou por e-mail.</p>
   <p>
     <a href="https://www.linkedin.com/in/arthur-batista-oliveira-bb8018358/">
-      <img src="https://img.shields.io/badge/LinkedIn-ARTHUR_BATISTA-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="./assets/badge-16.svg" alt="LinkedIn" />
     </a>
     <a href="mailto:barthur.oliveira07@gmail.com">
-      <img src="https://img.shields.io/badge/barthur.oliveira07%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+      <img src="./assets/badge-17.svg" alt="Email" />
     </a>
     <a href="https://github.com/ArthurBatista279?tab=repositories">
-      <img src="https://img.shields.io/badge/Meus_Reposit%C3%B3rios-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repositórios" />
+      <img src="./assets/badge-18.svg" alt="Repositórios" />
     </a>
   </p>
 </div>
