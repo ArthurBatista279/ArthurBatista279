@@ -1,258 +1,216 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
   <defs>
-    <!-- Dark Gritty Battlefield Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070a" />
-      <stop offset="40%" stop-color="#0a0e14" />
-      <stop offset="75%" stop-color="#080b0f" />
-      <stop offset="100%" stop-color="#040608" />
+    <!-- Background Gradient: Pure Pitch Black to Dark Slate Mist -->
+    <linearGradient id="ghpcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030507" />
+      <stop offset="50%" stop-color="#06090d" />
+      <stop offset="100%" stop-color="#020304" />
     </linearGradient>
 
-    <!-- Battlefield Aura Gradients (Amber & Cyan Radar) -->
-    <linearGradient id="amberAura" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff7700" />
-      <stop offset="50%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#fbbf24" />
+    <!-- Cold Mist / Atmospheric Fog (Like GHPC Trench) -->
+    <linearGradient id="fogGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0f1720" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#1e293b" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#030507" stop-opacity="0" />
     </linearGradient>
 
-    <linearGradient id="cyanRadar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284c7" />
-      <stop offset="100%" stop-color="#00e5ff" />
+    <!-- Subtle White Rim Light for Tank Silhouette -->
+    <linearGradient id="tankRim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="35%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#05070a" />
     </linearGradient>
 
-    <radialGradient id="battleGlow" cx="75%" cy="50%" r="55%">
-      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.22" />
-      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.08" />
-      <stop offset="70%" stop-color="#00e5ff" stop-opacity="0.04" />
-      <stop offset="100%" stop-color="#05070a" stop-opacity="0" />
+    <!-- Tank Turret Armor Tint -->
+    <linearGradient id="turretShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d3748" />
+      <stop offset="45%" stop-color="#1a202c" />
+      <stop offset="100%" stop-color="#10141d" />
+    </linearGradient>
+
+    <!-- Muzzle Flash Lighting Glow (Static, Cinematic) -->
+    <radialGradient id="muzzleRim" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f8fafc" stop-opacity="0.2" />
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#030507" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="muzzleFlare" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
-      <stop offset="20%" stop-color="#ffae00" stop-opacity="0.75" />
-      <stop offset="60%" stop-color="#ff3300" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#ff3300" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Tactical Grid Pattern -->
-    <pattern id="tacGrid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#2a384b" stroke-width="0.55" stroke-opacity="0.22" />
-      <circle cx="0" cy="0" r="0.8" fill="#f59e0b" fill-opacity="0.25" />
-    </pattern>
-
-    <!-- Scanline Texture for Battlefield CRT HUD -->
-    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.2" stroke-opacity="0.28" />
-    </pattern>
-
+    <!-- High-Contrast Stencil Font / Military Stamp -->
     <style>
-      .bf-title { font-family: 'Impact', 'Arial Black', -apple-system, sans-serif; font-size: 44px; fill: #f3f4f6; letter-spacing: 2px; text-transform: uppercase; }
-      .bf-sub { font-family: 'Consolas', 'Courier New', monospace; font-weight: 700; font-size: 15px; fill: #f59e0b; letter-spacing: 2.5px; }
-      .bf-desc { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 15px; fill: #9ca3af; line-height: 1.5; }
-      .bf-tech { font-family: 'Consolas', 'Courier New', monospace; font-size: 11.5px; font-weight: 700; letter-spacing: 1px; }
-      .radar-sweep { transform-origin: 940px 180px; animation: sweep 8s linear infinite; }
-      .flicker { animation: bfFlicker 4s infinite; }
-      .pulse-slow { animation: auraPulse 3.5s ease-in-out infinite; }
-      .muzzle-pulse { transform-origin: 668px 145px; animation: shotPulse 2.8s ease-out infinite; }
-      @keyframes sweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-      @keyframes auraPulse { 0%, 100% { opacity: 0.65; transform: scale(1); } 50% { opacity: 0.95; transform: scale(1.02); } }
-      @keyframes shotPulse { 0%, 85% { opacity: 0; transform: scale(0.3); } 88% { opacity: 1; transform: scale(1.4); } 92% { opacity: 0.4; transform: scale(1); } 100% { opacity: 0; transform: scale(0.2); } }
-      @keyframes bfFlicker { 0%, 100% { opacity: 0.95; } 3% { opacity: 0.65; } 6% { opacity: 0.95; } 52% { opacity: 0.85; } 54% { opacity: 0.45; } 56% { opacity: 0.95; } }
+      .callsign { font-family: 'Impact', 'Arial Black', sans-serif; font-size: 46px; fill: #f8fafc; letter-spacing: 3px; }
+      .stencil-sub { font-family: 'Consolas', 'Courier New', monospace; font-weight: 700; font-size: 14px; fill: #94a3b8; letter-spacing: 3.5px; }
+      .bio-p { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 14.5px; fill: #64748b; line-height: 1.6; }
+      .tag-lbl { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+      .accent-box { font-family: 'Impact', sans-serif; font-size: 20px; fill: #f8fafc; letter-spacing: 1px; }
     </style>
   </defs>
 
-  <!-- Background Base & Grid -->
-  <rect width="1200" height="360" rx="14" fill="url(#bgGrad)" stroke="#1f2937" stroke-width="1.8" />
-  <rect width="1200" height="360" rx="14" fill="url(#tacGrid)" />
-  <rect width="1200" height="360" rx="14" fill="url(#battleGlow)" class="pulse-slow" />
+  <!-- Solid Dark Atmospheric Background -->
+  <rect width="1200" height="360" fill="url(#ghpcBg)" />
 
-  <!-- Top Battlefield Danger Warning Stripe -->
-  <path d="M 0 0 L 25 0 L 15 6 L 0 6 Z M 40 0 L 65 0 L 55 6 L 30 6 Z M 80 0 L 105 0 L 95 6 L 70 6 Z M 120 0 L 145 0 L 135 6 L 110 6 Z M 160 0 L 185 0 L 175 6 L 150 6 Z M 200 0 L 225 0 L 215 6 L 190 6 Z M 240 0 L 265 0 L 255 6 L 230 6 Z M 280 0 L 305 0 L 295 6 L 270 6 Z M 320 0 L 345 0 L 335 6 L 310 6 Z" fill="#f59e0b" fill-opacity="0.4" />
-  <rect x="0" y="0" width="1200" height="2" fill="url(#amberAura)" />
-  <rect x="0" y="358" width="1200" height="2" fill="url(#cyanRadar)" />
+  <!-- Atmospheric Fog Base Layer -->
+  <rect x="0" y="140" width="1200" height="220" fill="url(#fogGrad)" />
 
-  <!-- Military HUD Corner Brackets (Battlefield Style) -->
-  <path d="M 18 42 L 18 18 L 42 18" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-opacity="0.8" />
-  <path d="M 1182 42 L 1182 18 L 1158 18" fill="none" stroke="#00e5ff" stroke-width="2.5" stroke-opacity="0.8" />
-  <path d="M 18 318 L 18 342 L 42 342" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-opacity="0.8" />
-  <path d="M 1182 318 L 1182 342 L 1158 342" fill="none" stroke="#00e5ff" stroke-width="2.5" stroke-opacity="0.8" />
+  <!-- Minimalist Cold Contrast Border -->
+  <rect width="1200" height="360" fill="none" stroke="#1e293b" stroke-width="1.2" />
 
-  <!-- Status / Unit Beacon Pill -->
-  <g transform="translate(50, 32)">
-    <rect width="490" height="26" rx="4" fill="#0d141e" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.5" />
-    <circle cx="14" cy="13" r="4.5" fill="#f59e0b" class="flicker" />
-    <text x="28" y="17" class="bf-tech" fill="#f3f4f6">TACTICAL OVERVIEW // DEFENSE &amp; SURVIVAL RTS</text>
-    <rect x="360" y="5" width="120" height="16" rx="2" fill="#1f2937" />
-    <text x="368" y="17" class="bf-tech" fill="#00e5ff" style="font-size:10px;">SECTOR_ACT: 0.1.0</text>
-  </g>
+  <!-- Top Stark White Identity Line (GHPC Style) -->
+  <line x1="48" y1="28" x2="160" y2="28" stroke="#f8fafc" stroke-width="2" />
+  <text x="175" y="32" class="tag-lbl" fill="#64748b">SYS.SECTOR // TACTICAL SIMULATION</text>
 
-  <!-- Left Main Callout Text -->
-  <text x="50" y="112" class="bf-title">ARTHUR BATISTA OLIVEIRA</text>
-  <text x="50" y="142" class="bf-sub">&gt; GAME SYSTEMS &amp; SIMULATION ARCHITECTURE</text>
+  <!-- Left Content Block -->
+  <g transform="translate(48, 86)">
+    <!-- Main Big Stencil Name -->
+    <text x="0" y="38" class="callsign">ARTHUR BATISTA</text>
+    <text x="0" y="68" class="stencil-sub">&gt; GAME DEVELOPER &amp; 3D ARTIST</text>
 
-  <!-- Bio / Focus Paragraph -->
-  <text x="50" y="180" class="bf-desc">Criador e arquiteto de simulação do <tspan fill="#f59e0b" font-weight="700">Sector Quarantine</tspan>, um RTS tático militar PVE</text>
-  <text x="50" y="202" class="bf-desc">no Roblox com foco em combate veicular balístico, engenharia procedural 3D</text>
-  <text x="50" y="224" class="bf-desc">e otimização de alta performance para contenção de hordas.</text>
+    <!-- Bio (Direto, sem enrolação técnica) -->
+    <text x="0" y="112" class="bio-p">Criador do <tspan fill="#f8fafc" font-weight="700">Sector Quarantine</tspan>, desenvolvendo jogos táticos,</text>
+    <text x="0" y="134" class="bio-p">combate militar e modelagem hard-surface 3D no Blender.</text>
 
-  <!-- Bottom Project Feature Cards -->
-  <!-- Card 1: Sector Quarantine (Active Focus) -->
-  <g transform="translate(50, 252)">
-    <rect width="260" height="64" rx="6" fill="#0e1724" stroke="#f59e0b" stroke-width="1.8" />
-    <path d="M 0 0 L 16 0 L 0 16 Z" fill="#f59e0b" />
-    <text x="18" y="25" class="bf-tech" fill="#f59e0b" style="font-size:13px;">★ SECTOR QUARANTINE</text>
-    <text x="18" y="43" class="bf-tech" fill="#e5e7eb" style="font-size:11px;">RTS Militar · FCDC Faction</text>
-    <text x="18" y="56" class="bf-tech" fill="#9ca3af" style="font-size:9.5px;">Blindados · Balística · Luau / 60 FPS</text>
-  </g>
+    <!-- Clean Tactical Badges (GHPC Monochrome Style) -->
+    <g transform="translate(0, 168)">
+      <!-- Box 1: Sector Quarantine -->
+      <rect x="0" y="0" width="190" height="42" fill="#0b1118" stroke="#334155" stroke-width="1.2" />
+      <line x1="0" y1="0" x2="0" y2="42" stroke="#f8fafc" stroke-width="3" />
+      <text x="14" y="18" class="tag-lbl" fill="#f8fafc">SECTOR QUARANTINE</text>
+      <text x="14" y="32" class="tag-lbl" fill="#64748b" style="font-size:9.5px;">Tactical Zombie RTS</text>
 
-  <!-- Card 2: 3D Procedural Engineering -->
-  <g transform="translate(325, 252)">
-    <rect width="235" height="64" rx="6" fill="#0a121c" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.8" />
-    <path d="M 0 0 L 14 0 L 0 14 Z" fill="#00e5ff" />
-    <text x="16" y="25" class="bf-tech" fill="#00e5ff" style="font-size:12.5px;">◆ 3D HARDSURFACE &amp; BPY</text>
-    <text x="16" y="43" class="bf-tech" fill="#e5e7eb" style="font-size:11px;">Pipeline Blender &amp; Roblox</text>
-    <text x="16" y="56" class="bf-tech" fill="#9ca3af" style="font-size:9.5px;">M2 Bradley · Humvee · Modular Rig</text>
-  </g>
+      <!-- Box 2: 3D Modeling -->
+      <rect x="206" y="0" width="170" height="42" fill="#0b1118" stroke="#334155" stroke-width="1.2" />
+      <line x1="206" y1="0" x2="206" y2="42" stroke="#94a3b8" stroke-width="3" />
+      <text x="220" y="18" class="tag-lbl" fill="#f8fafc">HARD-SURFACE 3D</text>
+      <text x="220" y="32" class="tag-lbl" fill="#64748b" style="font-size:9.5px;">Blender &amp; Military Rigs</text>
 
-  <!-- Card 3: Systems & Back-End -->
-  <g transform="translate(575, 252)">
-    <rect width="180" height="64" rx="6" fill="#090e15" stroke="#4b5563" stroke-width="1" />
-    <text x="14" y="25" class="bf-tech" fill="#9ca3af" style="font-size:12px;">◈ BACK-END &amp; CORE</text>
-    <text x="14" y="43" class="bf-tech" fill="#d1d5db" style="font-size:11px;">C# / .NET 10 &amp; SQL</text>
-    <text x="14" y="56" class="bf-tech" fill="#6b7280" style="font-size:9.5px;">Arquitetura em Camadas</text>
-  </g>
-
-  <!-- ================= RIGHT SIDE: BATTLEFIELD TANK / RADAR "AURA" ================= -->
-  
-  <!-- Outer Tactical Radar Ring (Rotating with HUD notches) -->
-  <g transform="translate(950, 180)">
-    <!-- Concentric Target Circles -->
-    <circle cx="0" cy="0" r="145" fill="none" stroke="#223145" stroke-width="1.5" stroke-dasharray="8 6" />
-    <circle cx="0" cy="0" r="115" fill="none" stroke="#374151" stroke-width="1" stroke-opacity="0.6" />
-    <circle cx="0" cy="0" r="85" fill="none" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 4" />
-    <circle cx="0" cy="0" r="45" fill="none" stroke="#00e5ff" stroke-width="0.8" stroke-opacity="0.4" />
-
-    <!-- Compass Cardinal Marks -->
-    <line x1="-155" y1="0" x2="-135" y2="0" stroke="#f59e0b" stroke-width="2" />
-    <line x1="135" y1="0" x2="155" y2="0" stroke="#f59e0b" stroke-width="2" />
-    <line x1="0" y1="-155" x2="0" y2="-135" stroke="#f59e0b" stroke-width="2" />
-    <line x1="0" y1="135" x2="0" y2="155" stroke="#f59e0b" stroke-width="2" />
-
-    <text x="-6" y="-140" class="bf-tech" fill="#f59e0b" style="font-size:10px;">N</text>
-    <text x="140" y="4" class="bf-tech" fill="#9ca3af" style="font-size:9px;">E</text>
-    <text x="-6" y="150" class="bf-tech" fill="#9ca3af" style="font-size:9px;">S</text>
-    <text x="-152" y="4" class="bf-tech" fill="#9ca3af" style="font-size:9px;">W</text>
-
-    <!-- Radar Sweep Beam (Rotating) -->
-    <g class="radar-sweep">
-      <line x1="0" y1="0" x2="145" y2="0" stroke="#00e5ff" stroke-width="2" stroke-opacity="0.8" />
-      <path d="M 0 0 L 145 0 A 145 145 0 0 1 125 72 Z" fill="#00e5ff" fill-opacity="0.12" />
-    </g>
-
-    <!-- Tactical Target Crosshair Reticle -->
-    <path d="M -30 -30 L -20 -30 M -30 -30 L -30 -20" fill="none" stroke="#f59e0b" stroke-width="2" />
-    <path d="M 30 -30 L 20 -30 M 30 -30 L 30 -20" fill="none" stroke="#f59e0b" stroke-width="2" />
-    <path d="M -30 30 L -20 30 M -30 30 L -30 20" fill="none" stroke="#f59e0b" stroke-width="2" />
-    <path d="M 30 30 L 20 30 M 30 30 L 30 20" fill="none" stroke="#f59e0b" stroke-width="2" />
-  </g>
-
-  <!-- ================= 2D TACTICAL ARMORED VEHICLE / TANK SILHOUETTE ================= -->
-  <!-- Bradley / Heavy IFV Profile facing Left with Cannon angled toward center -->
-  <g transform="translate(730, 95)">
-    <!-- Shadow Base -->
-    <ellipse cx="210" cy="148" rx="195" ry="14" fill="#000000" fill-opacity="0.75" />
-
-    <!-- Tracks & Suspension Lower Assembly -->
-    <!-- Roadwheels 6x -->
-    <g fill="#182029" stroke="#0a0e14" stroke-width="2.5">
-      <circle cx="85" cy="132" r="15" />
-      <circle cx="130" cy="132" r="15" />
-      <circle cx="175" cy="132" r="15" />
-      <circle cx="220" cy="132" r="15" />
-      <circle cx="265" cy="132" r="15" />
-      <circle cx="310" cy="132" r="15" />
-      <!-- Sprocket & Idler Wheels -->
-      <circle cx="48" cy="120" r="16" fill="#131b24" />
-      <circle cx="342" cy="122" r="14" fill="#131b24" />
-    </g>
-    <!-- Inner Wheel Rim Hubs (Amber/Gunmetal accents) -->
-    <g fill="#2b3644">
-      <circle cx="85" cy="132" r="6" />
-      <circle cx="130" cy="132" r="6" />
-      <circle cx="175" cy="132" r="6" />
-      <circle cx="220" cy="132" r="6" />
-      <circle cx="265" cy="132" r="6" />
-      <circle cx="310" cy="132" r="6" />
-    </g>
-
-    <!-- Main Track Envelope Path -->
-    <path d="M 45 106 L 340 108 L 358 126 L 335 146 L 60 146 L 34 126 Z" fill="none" stroke="#2b3846" stroke-width="5" stroke-linejoin="round" />
-    <path d="M 45 106 L 340 108 L 358 126 L 335 146 L 60 146 L 34 126 Z" fill="none" stroke="#070a0e" stroke-width="2" stroke-dasharray="6 3" />
-
-    <!-- Lower Side Armor Skirt (Chapa Lateral Rebitada) -->
-    <polygon points="50,96 338,98 338,118 315,118 300,122 100,122 75,118 50,118" fill="#151e27" stroke="#374454" stroke-width="1.8" />
-    <!-- Armor Plate Segments -->
-    <line x1="110" y1="98" x2="110" y2="120" stroke="#0a0f16" stroke-width="2" />
-    <line x1="170" y1="98" x2="170" y2="120" stroke="#0a0f16" stroke-width="2" />
-    <line x1="230" y1="98" x2="230" y2="120" stroke="#0a0f16" stroke-width="2" />
-    <line x1="290" y1="98" x2="290" y2="120" stroke="#0a0f16" stroke-width="2" />
-
-    <!-- Main Hull Glacis (Chassi Superior com Angulação Anti-minas) -->
-    <polygon points="20,94 48,68 155,62 335,62 355,82 355,98 48,98 20,94" fill="#1b2430" stroke="#48596c" stroke-width="2" />
-    <!-- Front Trim Vane / Quebra-Onda Frontal -->
-    <polygon points="12,94 44,66 60,66 35,94" fill="#111822" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.8" />
-
-    <!-- Driver Vision Block & Engine Deck Louvers -->
-    <rect x="75" y="66" width="35" height="6" rx="1.5" fill="#0d141e" stroke="#00e5ff" stroke-width="0.8" />
-    <line x1="118" y1="64" x2="148" y2="64" stroke="#0d141e" stroke-width="2" />
-    <line x1="118" y1="67" x2="148" y2="67" stroke="#0d141e" stroke-width="2" />
-
-    <!-- TURRET ASSEMBLY (Angular Armor & Bushmaster 25mm Autocannon) -->
-    <g transform="translate(145, 12)">
-      <!-- Turret Turntable Ring -->
-      <rect x="25" y="46" width="135" height="6" rx="2" fill="#0b0f15" stroke="#374151" stroke-width="1" />
-
-      <!-- Main Angular Turret Body -->
-      <polygon points="10,46 32,16 135,16 158,46" fill="#222d3b" stroke="#5d728a" stroke-width="2.2" />
-      
-      <!-- Commander / Gunner Sight Sight Housing (Top-Left) -->
-      <rect x="42" y="4" width="28" height="15" rx="2" fill="#18212d" stroke="#00e5ff" stroke-width="1.2" />
-      <rect x="46" y="8" width="20" height="7" fill="#00e5ff" fill-opacity="0.85" />
-
-      <!-- TOW Missile Box on Turret Left Rear (Side Profile Box) -->
-      <polygon points="125,12 165,12 165,36 125,36" fill="#18222d" stroke="#f59e0b" stroke-width="1.5" />
-      <circle cx="158" cy="24" r="5" fill="#f59e0b" fill-opacity="0.75" />
-
-      <!-- M242 Bushmaster 25mm Autocannon Barrel (Pointing Forward Left) -->
-      <!-- Mantlet / Gun Mount -->
-      <polygon points="5,38 25,26 25,44 5,42" fill="#111720" stroke="#f59e0b" stroke-width="1.5" />
-      <!-- Main Barrel Extension -->
-      <rect x="-95" y="31" width="105" height="7" rx="1.5" fill="#18222d" stroke="#526479" stroke-width="1.5" />
-      <!-- Fluted Heat Shield Rings -->
-      <rect x="-40" y="29.5" width="45" height="10" rx="1" fill="#101720" stroke="#f59e0b" stroke-width="1" />
-      <!-- Slotted Muzzle Brake (Boca do Canhão) -->
-      <rect x="-108" y="29" width="14" height="11" rx="1.5" fill="#0a0e14" stroke="#f59e0b" stroke-width="1.5" />
-
-      <!-- Smoke Grenade Dischargers (Tubo Quádruplo Frontal) -->
-      <g stroke="#374151" stroke-width="1.5" fill="#0f1620">
-        <line x1="28" y1="40" x2="16" y2="34" stroke="#f59e0b" stroke-width="3" />
-        <line x1="32" y1="43" x2="20" y2="37" stroke="#f59e0b" stroke-width="3" />
-      </g>
-
-      <!-- Tactical Radio Antennas Sweeping Back -->
-      <path d="M 148 16 Q 185 -15 220 -28" fill="none" stroke="#9ca3af" stroke-width="1.5" />
-      <path d="M 120 16 Q 160 -10 195 -18" fill="none" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 3" />
+      <!-- Box 3: Roblox Engine -->
+      <rect x="392" y="0" width="130" height="42" fill="#0b1118" stroke="#334155" stroke-width="1.2" />
+      <line x1="392" y1="0" x2="392" y2="42" stroke="#64748b" stroke-width="3" />
+      <text x="406" y="18" class="tag-lbl" fill="#f8fafc">ROBLOX / LUAU</text>
+      <text x="406" y="32" class="tag-lbl" fill="#64748b" style="font-size:9.5px;">Game Architecture</text>
     </g>
   </g>
 
-  <!-- Animated Muzzle Blast Flare / Firing Aura (Front Cannon Point) -->
-  <g class="muzzle-pulse">
-    <circle cx="668" cy="142" r="28" fill="url(#muzzleFlare)" />
-    <!-- Ballistic Tracer Fire Line Streaking Forward -->
-    <line x1="668" y1="142" x2="480" y2="142" stroke="#ffae00" stroke-width="3.5" stroke-linecap="round" />
-    <line x1="668" y1="142" x2="540" y2="142" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+  <!-- ================= RIGHT SIDE: GHPC ART STYLE 2D MILITARY SILHOUETTES ================= -->
+  <!-- Pure 2D High-Contrast Tank (M1 Abrams / Bradley Heavy Profile) & Advancing Infantry -->
+
+  <!-- Atmospheric Mound / Berm Silhouette (Rising Trench Ground) -->
+  <path d="M 540 360 Q 660 250 820 225 L 1200 225 L 1200 360 Z" fill="#020406" />
+  <path d="M 520 360 Q 670 265 840 240 L 1200 240 L 1200 360 Z" fill="#070b10" />
+
+  <!-- Soft Ambient Glow behind the Cannon Barrel -->
+  <circle cx="820" cy="140" r="160" fill="url(#muzzleRim)" />
+
+  <!-- ================= 2D MAIN BATTLE TANK (GHPC CONTRAST SILHOUETTE) ================= -->
+  <g transform="translate(560, 65)">
+
+    <!-- Long 120mm Gun Barrel with Bore Evacuator (Pointed Forward Left) -->
+    <!-- Muzzle Tip / Muzzle Reference Sensor -->
+    <rect x="-85" y="70.5" width="8" height="7" fill="#64748b" />
+    <rect x="-77" y="72" width="15" height="4" fill="#090d13" />
+    <!-- Main Gun Tube -->
+    <rect x="-62" y="71" width="175" height="6" fill="#1e293b" />
+    <line x1="-62" y1="71" x2="113" y2="71" stroke="#475569" stroke-width="1" />
+    <!-- Bore Evacuator / Fume Extractor (Cilindro no meio do cano) -->
+    <rect x="-10" y="68" width="48" height="12" rx="1.5" fill="#131b24" stroke="#334155" stroke-width="1.2" />
+    <!-- Gun Mantlet Collar (Base do Canhão) -->
+    <polygon points="108,62 135,56 135,88 108,82" fill="#0c1117" stroke="#334155" stroke-width="1.2" />
+
+    <!-- Main Angular Turret (Wedge Armor Profile - Like GHPC Logo) -->
+    <!-- Turret Cheek (Chapa Frontal Angular Inclinada) -->
+    <polygon points="130,56 195,34 330,34 380,48 385,92 130,92" fill="#151d27" stroke="#475569" stroke-width="1.5" />
+    <!-- Turret Roof Highlight (Stark Top Edge) -->
+    <line x1="195" y1="34" x2="330" y2="34" stroke="#94a3b8" stroke-width="1.8" />
+    <!-- Turret Bustle / Rear Stowage Basket -->
+    <polygon points="330,34 400,34 405,62 380,62" fill="#0a0f15" stroke="#334155" stroke-width="1" />
+    <line x1="330" y1="42" x2="400" y2="42" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 3" />
+
+    <!-- Commander's Cupola & Heavy .50 MG Mounted on Top -->
+    <rect x="245" y="24" width="35" height="10" rx="1" fill="#0f1620" stroke="#334155" stroke-width="1" />
+    <!-- Machine Gun Mount -->
+    <polygon points="215,16 235,16 238,25 212,25" fill="#090e14" />
+    <rect x="175" y="17" width="42" height="4" fill="#334155" />
+    <rect x="215" y="13" width="12" height="14" fill="#1a2430" /> <!-- Ammo Box -->
+
+    <!-- Gunner Primary Sight Doghouse (Periscópio Blindado) -->
+    <rect x="190" y="18" width="22" height="16" rx="1" fill="#0a0f16" stroke="#475569" stroke-width="1" />
+    <rect x="194" y="22" width="14" height="8" fill="#38bdf8" fill-opacity="0.6" />
+
+    <!-- Turret Ring Base -->
+    <rect x="150" y="92" width="220" height="8" fill="#080c12" />
+
+    <!-- Lower Hull Glacis & Armor Skirts (Chassi do Tanque) -->
+    <polygon points="85,100 150,96 420,96 435,125 435,148 65,148 55,125" fill="#0d131a" stroke="#334155" stroke-width="1.2" />
+    <!-- Glacis Plate Top Edge Contrast -->
+    <line x1="55" y1="125" x2="150" y2="96" stroke="#64748b" stroke-width="1.5" />
+
+    <!-- Tracks & Heavy Rubber-Padded Roadwheels (6x Pares) -->
+    <!-- Heavy Side Skirt Plate (Proteção Lateral Rebitada) -->
+    <rect x="75" y="120" width="350" height="25" fill="#070a0e" stroke="#1e293b" stroke-width="1" />
+    <!-- Skirt Panel Grooves -->
+    <line x1="130" y1="120" x2="130" y2="145" stroke="#1e293b" stroke-width="1.5" />
+    <line x1="185" y1="120" x2="185" y2="145" stroke="#1e293b" stroke-width="1.5" />
+    <line x1="240" y1="120" x2="240" y2="145" stroke="#1e293b" stroke-width="1.5" />
+    <line x1="295" y1="120" x2="295" y2="145" stroke="#1e293b" stroke-width="1.5" />
+    <line x1="350" y1="120" x2="350" y2="145" stroke="#1e293b" stroke-width="1.5" />
+
+    <!-- Roadwheels Visible Under Skirt Mud Flaps -->
+    <g fill="#0b1118" stroke="#1a2330" stroke-width="2">
+      <circle cx="110" cy="155" r="14" />
+      <circle cx="150" cy="155" r="14" />
+      <circle cx="190" cy="155" r="14" />
+      <circle cx="230" cy="155" r="14" />
+      <circle cx="270" cy="155" r="14" />
+      <circle cx="310" cy="155" r="14" />
+      <circle cx="350" cy="155" r="14" />
+    </g>
+    <!-- Bottom Track Return Line Ground Contact -->
+    <path d="M 85 168 L 375 168" stroke="#1e293b" stroke-width="4" stroke-dasharray="6 3" />
   </g>
 
-  <!-- CRT HUD Scanline Overlay -->
-  <rect width="1200" height="360" rx="14" fill="url(#scanlines)" pointer-events="none" />
+  <!-- ================= ADVANCING INFANTRY SQUAD (GHPC TRENCH STYLE) ================= -->
+  <!-- Silhouettes of Soldiers moving alongside the armor into combat -->
+
+  <!-- Soldier 1: Squad Leader (Center-Right, Alert) -->
+  <g transform="translate(1015, 135)">
+    <!-- Helmet with Night-Vision Mount -->
+    <ellipse cx="25" cy="15" rx="9" ry="8" fill="#0d141e" stroke="#64748b" stroke-width="1" />
+    <rect x="14" y="15" width="6" height="4" rx="1" fill="#94a3b8" />
+    <!-- Head / Balaclava -->
+    <circle cx="25" cy="20" r="5" fill="#06090d" />
+    <!-- Torso with Plate Carrier & Pouches -->
+    <polygon points="16,28 35,28 38,62 14,62" fill="#0a0f16" stroke="#334155" stroke-width="1" />
+    <!-- Backpack / Radio Antenna -->
+    <rect x="30" y="32" width="10" height="22" rx="2" fill="#070a0f" />
+    <line x1="36" y1="32" x2="42" y2="10" stroke="#64748b" stroke-width="1" />
+    <!-- Rifle (M4A1 Low Ready) -->
+    <polygon points="12,38 4,46 16,50 20,44" fill="#05070a" />
+    <line x1="8" y1="44" x2="-18" y2="40" stroke="#94a3b8" stroke-width="2.5" />
+    <rect x="-6" y="44" width="8" height="12" fill="#05070a" /> <!-- Magazine -->
+    <!-- Legs in Advance / Trench Stance -->
+    <polygon points="16,62 26,62 30,98 22,98" fill="#070a0e" />
+    <polygon points="26,62 36,62 48,94 40,96" fill="#040608" />
+  </g>
+
+  <!-- Soldier 2: Rifleman Advancing (Right) -->
+  <g transform="translate(1085, 148)">
+    <!-- Helmet -->
+    <ellipse cx="22" cy="14" rx="8" ry="7" fill="#0c121a" stroke="#475569" stroke-width="1" />
+    <!-- Body -->
+    <polygon points="14,24 30,24 32,56 12,56" fill="#080c12" />
+    <!-- Weapon Pointing Forward Left -->
+    <line x1="12" y1="36" x2="-12" y2="34" stroke="#64748b" stroke-width="2" />
+    <!-- Legs -->
+    <polygon points="14,56 22,56 24,88 16,88" fill="#05080c" />
+    <polygon points="22,56 30,56 38,84 30,86" fill="#030508" />
+  </g>
+
+  <!-- Soldier 3: Crouched Scout (Behind Berm, Far Right) -->
+  <g transform="translate(1142, 172)">
+    <ellipse cx="18" cy="12" rx="7" ry="6" fill="#0a0f16" stroke="#334155" stroke-width="1" />
+    <polygon points="10,20 25,20 26,45 8,45" fill="#06090e" />
+    <line x1="8" y1="28" x2="-8" y2="26" stroke="#475569" stroke-width="1.8" />
+  </g>
+
+  <!-- Dramatic Dark Ground Silhouette Bar -->
+  <rect x="0" y="348" width="1200" height="12" fill="#020305" />
 </svg>

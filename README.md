@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- BANNER TÁTICO MILITAR - ESTILO BATTLEFIELD -->
-  <img src="./assets/hero-banner.svg" alt="Arthur Batista Oliveira — Tactical Overview" width="100%" />
+  <!-- BANNER TÁTICO MILITAR - ESTILO GHPC / BATTLEFIELD -->
+  <img src="./assets/hero-banner.jpg" alt="Arthur Batista Oliveira — Tactical Overview" width="100%" />
 
   <br />
 
